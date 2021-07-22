@@ -1,0 +1,15 @@
+{
+  "name": "redux-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "sharabiani",
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^4.1.0"
+  }
+}
