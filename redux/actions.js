@@ -1,5 +1,9 @@
 export const ADD_BUG = "bugAdded";
 export const REMOVE_BUG = "bugRemoved";
+export const RESOLVE_BUG = "bugResolved";
+
+
+// The following functions are called Action Creators.
 
 export function addBug(description) {
   return {
@@ -7,7 +11,7 @@ export function addBug(description) {
     payload: {
       description: description
     }
-  }
+  };
 }
 
 export function removeBug(id) {
@@ -16,5 +20,14 @@ export function removeBug(id) {
     payload: {
       id: id
     }
-  }
+  };
+}
+
+export function resolveBug(id) {
+  return {
+    type: RESOLVE_BUG,
+    payload: {
+      id: id
+    }
+  };
 }

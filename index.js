@@ -1,5 +1,5 @@
 import store from './redux/store.js';
-import {addBug, removeBug} from './redux/actions.js';
+import {addBug, removeBug, resolveBug} from './redux/actions.js';
 
 console.log(' = = = redux sandbox = = = ');
 
@@ -16,6 +16,7 @@ store.dispatch(addBug('first bug'));
 store.dispatch(addBug('second bug'));
 store.dispatch(addBug('delete this bug'));
 store.dispatch(removeBug(3));
+store.dispatch(resolveBug(2));
 
 // unsubscribe, in case in other pages, maybe 
 // we don't have the same UI elements.
